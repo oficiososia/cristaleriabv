@@ -90,7 +90,13 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="es" className={`${cabinet.variable} ${instrument.variable} ${fraunces.variable} h-full`}>
+    // data-scroll-behavior="smooth": el scroll suave solo se usa dentro de la página;
+    // al cambiar de página Next.js lo desactiva y la nueva página empieza arriba.
+    <html
+      lang="es"
+      data-scroll-behavior="smooth"
+      className={`${cabinet.variable} ${instrument.variable} ${fraunces.variable} h-full`}
+    >
       <body className="flex min-h-full flex-col">
         <script
           type="application/ld+json"

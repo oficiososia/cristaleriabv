@@ -6,7 +6,7 @@ Generado con **UI UX Pro Max** (`--design-system`, consulta «glass glazing comp
 
 - **Patrón:** narrativa con scroll (scroll-triggered storytelling) y un CTA al final de cada bloque.
 - **Estilo:** *Liquid Glass*, vidrio esmerilado sobre fotografía grande (backdrop-blur 9–16 px, bordes blancos translúcidos, reflejo que cruza la superficie). Encaja con el producto: una cristalería.
-- **Estructura (Formis):** barra superior → cabecera con teléfono → hero con cuadrícula → quiénes somos con estadísticas → servicios con barras de vidrio → proceso con tarjetas apiladas → portfolio → garantías en sección oscura → FAQ → contacto en tarjeta oscura → pie con cajas.
+- **Estructura (Formis):** cabecera con teléfono → hero con cuadrícula y edificio isométrico → quiénes somos con estadísticas → servicios con barras de vidrio → proceso con tarjetas apiladas → calculadora → portfolio → FAQ (5 preguntas) → contacto en tarjeta oscura → pie con cajas.
 
 ## Color
 
@@ -39,7 +39,7 @@ Contrastes verificados (WCAG AA): navy-900 sobre fondo 13,4:1 · ink-soft 5,4:1 
 | Titulares palabra a palabra | `text-reveal.tsx` |
 | Contadores animados | `number-ticker.tsx` |
 | Cinta infinita de servicios | `marquee.tsx` |
-| Casa que se acristala (hover en escritorio, al aparecer en móvil, interruptor sin cristal / acristalado) | `src/components/home/glazing-house.tsx` |
+| Edificio isométrico en obra (estilo render de Formis): cada ventana se acristala al pasar el cursor o al tocarla, contador de cristales, andamio que se retira e inclinación 3D | `src/components/home/iso-house.tsx` |
 
 Duraciones de 0,3 a 0,7 s con la curva `cubic-bezier(0.22, 1, 0.36, 1)`. Todo respeta `prefers-reduced-motion` (`MotionConfig reducedMotion="user"` y reglas CSS).
 

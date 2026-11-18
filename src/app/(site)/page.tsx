@@ -4,10 +4,13 @@ import { About } from "@/components/home/about";
 import { ServicesGrid } from "@/components/home/services-grid";
 import { Process } from "@/components/home/process";
 import { CalculatorBand } from "@/components/home/calculator-band";
-import { WhyUs } from "@/components/home/why-us";
 import { WorksPreview } from "@/components/home/works-preview";
 import { FaqSection } from "@/components/home/faq-section";
 import { ContactCta } from "@/components/home/contact-cta";
+import { faqs } from "@/content/faq";
+
+/** Las 5 preguntas frecuentes de la home: visita, plazos, presupuesto, garantía y pago. */
+const homeFaqs = [9, 0, 5, 3, 8].map((i) => faqs[i]);
 
 export default function HomePage() {
   return (
@@ -18,9 +21,8 @@ export default function HomePage() {
       <ServicesGrid />
       <Process />
       <CalculatorBand />
-      <WhyUs />
       <WorksPreview />
-      <FaqSection />
+      <FaqSection items={homeFaqs} />
       <ContactCta />
     </>
   );
