@@ -22,7 +22,7 @@ const link = "inline-flex min-h-10 items-center text-[15px] text-cream-100/75 tr
 
 /**
  * Pie de página: marca y accesos rápidos, navegación, servicios y contacto en
- * columnas alineadas; debajo, la marca a gran tamaño y la barra legal.
+ * columnas alineadas; debajo, la barra legal.
  */
 export function Footer() {
   return (
@@ -147,16 +147,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Marca a gran tamaño */}
-        <p
-          aria-hidden
-          className="pointer-events-none mt-16 select-none whitespace-nowrap text-center font-heading text-[clamp(3.2rem,15vw,13rem)] font-medium leading-[0.8] tracking-tight text-cream-100/[0.06]"
-        >
-          Cristalería BV
-        </p>
-
         {/* pb-24: deja libre la zona de los botones flotantes (WhatsApp y asistente) */}
-        <div className="flex flex-col items-center justify-between gap-3 border-t border-cream-200/10 pb-24 pt-6 text-sm text-cream-100/55 sm:flex-row sm:pb-28">
+        <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-cream-200/10 pb-24 pt-6 text-sm text-cream-100/55 sm:mt-16 sm:flex-row sm:pb-28">
           <p className="text-center sm:text-left">
             © <CopyrightYear /> {site.name}
           </p>
