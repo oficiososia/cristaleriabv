@@ -1,0 +1,103 @@
+import type { Metadata, Viewport } from "next";
+import { Fraunces, Instrument_Sans } from "next/font/google";
+import localFont from "next/font/local";
+import { fullAddress, site } from "@/content/site";
+import { Providers } from "./providers";
+import "./globals.css";
+
+const cabinet = localFont({
+  variable: "--font-cabinet",
+  display: "swap",
+  src: [
+    { path: "../fonts/CabinetGrotesk-400.woff2", weight: "400" },
+    { path: "../fonts/CabinetGrotesk-500.woff2", weight: "500" },
+    { path: "../fonts/CabinetGrotesk-700.woff2", weight: "700" },
+    { path: "../fonts/CabinetGrotesk-800.woff2", weight: "800" },
+  ],
+});
+
+const instrument = Instrument_Sans({
+  variable: "--font-instrument",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
+  title: {
+    default: `${site.name} | Cristaleros en Crevillente y el Baix Vinalopó`,
+    template: `%s | ${site.name}`,
+  },
+  description: site.description,
+  keywords: [
+    "cristalería",
+    "mamparas",
+    "espejos",
+    "cerramientos",
+    "aluminio",
+    "barandillas de vidrio",
+    "Crevillente",
+    "Baix Vinalopó",
+    "Elche",
+    "cristaleros",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    siteName: site.name,
+    title: `${site.name} | Expertos en vidrio y aluminio`,
+    description: site.description,
+  },
+  twitter: { card: "summary_large_image" },
+  alternates: { canonical: "/" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0a2a48",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  name: site.name,
+  description: site.description,
+  url: site.url,
+  telephone: site.phones[0].tel,
+  email: site.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.address.street,
+    postalCode: site.address.postalCode,
+    addressLocality: site.address.city,
+    addressRegion: site.address.province,
+    addressCountry: "ES",
+  },
+  geo: { "@type": "GeoCoordinates", latitude: site.address.lat, longitude: site.address.lon },
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "13:30" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "16:00", closes: "19:30" },
+  ],
+  areaServed: "Baix Vinalopó, Alicante",
+  hasMap: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`,
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html lang="es" className={`${cabinet.variable} ${instrument.variable} ${fraunces.variable} h-full`}>
+      <body className="flex min-h-full flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+        />
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}

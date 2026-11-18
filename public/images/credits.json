@@ -1,0 +1,274 @@
+[
+  {
+    "file": "hero/bano-mampara-cristal-luminoso.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/an-interior-of-a-bathroom-8089171/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Baño moderno y luminoso con mampara de cristal transparente y bañera exenta"
+  },
+  {
+    "file": "hero/casa-mediterranea-ventanales.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/white-and-brown-concrete-building-hHz4yrvxwlA",
+    "author": "Avi Werde",
+    "license": "Unsplash License",
+    "alt": "Casa mediterránea blanca de líneas modernas con grandes ventanales bajo el cielo azul"
+  },
+  {
+    "file": "about/manos-cortando-cristal.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/a-person-glass-cutting-7219193/",
+    "author": "cottonbro studio",
+    "license": "Pexels License",
+    "alt": "Manos de un cristalero cortando una lámina de vidrio con cortavidrios en el taller"
+  },
+  {
+    "file": "about/manos-cortando-vidrio-guantes.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/a-pair-of-gloves-on-a-table-with-a-laptop-eit0yNwi_AE",
+    "author": "Jakub Żerdzicki",
+    "license": "Unsplash License",
+    "alt": "Manos con guantes manipulando piezas de vidrio sobre la mesa de trabajo del taller"
+  },
+  {
+    "file": "services/mamparas/cover.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/interior-design-of-bathroom-with-shower-and-bathtub-12119354/",
+    "author": "Curtis Adams",
+    "license": "Pexels License",
+    "alt": "Mampara de ducha de cristal con tirador negro en un baño de mármol claro con bañera exenta"
+  },
+  {
+    "file": "services/mamparas/mampara-marmol-banera.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/a-shower-and-a-bathtub-8082221/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Mampara de cristal sin perfiles con bisagras cromadas junto a una bañera exenta en baño de mármol"
+  },
+  {
+    "file": "services/mamparas/mampara-perfil-negro.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/bathroom-with-toilet-and-bathtub-near-sink-on-counter-6588585/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Mampara de ducha de cristal con perfilería negra en un baño de tonos beige y mueble de madera"
+  },
+  {
+    "file": "services/espejos/cover.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/stylish-hall-in-luxury-apartment-7545774/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Recibidor con pared de espejo a medida y espejo redondo decorativo sobre un sofá capitoné"
+  },
+  {
+    "file": "services/espejos/espejo-bano-lavabos.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/stylish-bathroom-interior-6238612/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Espejo de baño panorámico sobre un mueble lacado blanco con lavabo doble"
+  },
+  {
+    "file": "services/espejos/espejo-recibidor-blanco.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/interior-design-of-room-7546322/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Recibidor blanco con espejo rectangular enmarcado, apliques de pared y aparador lacado"
+  },
+  {
+    "file": "services/cerramientos/cover.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/wicker-armchairs-in-sunlit-conservatory-ljX2si20Vek",
+    "author": "KAUDIA ESTATE",
+    "license": "Unsplash License",
+    "alt": "Cerramiento acristalado con techo de cristal y butacas de mimbre con vistas al jardín"
+  },
+  {
+    "file": "services/cerramientos/galeria-acristalada-luminosa.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/bright-sunroom-with-plants-and-dining-table-BnDI_MVomAI",
+    "author": "Clay Banks",
+    "license": "Unsplash License",
+    "alt": "Galería acristalada luminosa con mesa redonda, sillas de madera y plantas junto a los ventanales"
+  },
+  {
+    "file": "services/cerramientos/cerramiento-jardin-exterior.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/modern-sunroom-attached-to-a-house-surrounded-by-trees-ThdNMFMk2V4",
+    "author": "Kyan Tijhuis",
+    "license": "Unsplash License",
+    "alt": "Porche acristalado con perfilería blanca adosado a una vivienda rodeada de jardín"
+  },
+  {
+    "file": "services/aluminio/cover.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/tiled-terrace-outside-a-living-room-26747978/",
+    "author": "Image Hunter",
+    "license": "Pexels License",
+    "alt": "Puerta corredera de aluminio y cristal de gran formato abierta a una terraza con vistas a la montaña"
+  },
+  {
+    "file": "services/aluminio/corredera-dormitorio-jardin.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/a-photo-of-bed-in-bedroom-7587867/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Dormitorio con corredera de aluminio negro de suelo a techo que da a un jardín soleado"
+  },
+  {
+    "file": "services/aluminio/ventanales-casa-piedra.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/the-villa-is-located-on-the-hillside-with-a-view-of-the-sea-28054864/",
+    "author": "Ahmet Çötür",
+    "license": "Pexels License",
+    "alt": "Casa de piedra mediterránea con ventanales correderos de aluminio oscuro y terraza con césped"
+  },
+  {
+    "file": "services/barandillas/cover.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/photo-of-empty-gray-stairs-1190902/",
+    "author": "Scott Webb",
+    "license": "Pexels License",
+    "alt": "Escalera con barandilla de vidrio transparente y pasamanos metálico frente a un revestimiento de madera"
+  },
+  {
+    "file": "services/barandillas/escalera-interior-barandilla-vidrio.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/modern-staircase-in-luxurious-villa-interior-40808307/",
+    "author": "Alef Morais",
+    "license": "Pexels License",
+    "alt": "Escalera interior de peldaños oscuros con barandilla de vidrio junto a grandes ventanales con cortinas"
+  },
+  {
+    "file": "services/barandillas/balcones-barandilla-cristal.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/modern-glass-balconies-on-contemporary-building-37334932/",
+    "author": "Dirk Baker",
+    "license": "Pexels License",
+    "alt": "Fachada moderna con balcones protegidos por barandillas de cristal bajo el cielo azul"
+  },
+  {
+    "file": "services/armarios/cover.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/residential-project-in-sulaymaniyah-city-27562211/",
+    "author": "Ansar Muhammad",
+    "license": "Pexels License",
+    "alt": "Vestidor con puertas de cristal enmarcadas en perfil negro e iluminación LED interior"
+  },
+  {
+    "file": "services/armarios/vestidor-puertas-espejo.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/interior-of-spacious-walk-in-closet-with-mirrored-furniture-and-bright-lamps-6587821/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Vestidor blanco con armarios de puertas de espejo e isla central"
+  },
+  {
+    "file": "services/armarios/armario-puertas-cristal-pasillo.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/glass-wardrobe-in-modern-apartment-7533928/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Armario empotrado con puertas correderas de vidrio mate y acanalado con perfilería negra"
+  },
+  {
+    "file": "services/domino/cover.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/living-room-interior-with-furniture-in-modern-house-6436744/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Tabique de vidrio con perfilería de acero negro que separa el dormitorio del salón"
+  },
+  {
+    "file": "services/domino/cocina-tabique-acero-vidrio.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/grey-marble-kitchen-design-6970055/",
+    "author": "Max Vakhtbovych",
+    "license": "Pexels License",
+    "alt": "Puertas correderas de vidrio con cuarterones de acero negro junto a una cocina moderna gris"
+  },
+  {
+    "file": "services/domino/puerta-vidrio-estriado-verde.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/green-door-with-ribbed-glass-panels-1jKMPdtifmE",
+    "author": "Ivan Konev",
+    "license": "Unsplash License",
+    "alt": "Detalle de puerta verde con vidrio estriado decorativo y tirador metálico"
+  },
+  {
+    "file": "services/otros/cover.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/green-and-white-line-paper-PreLE0ZJVQ0",
+    "author": "Max Harlynking",
+    "license": "Unsplash License",
+    "alt": "Láminas de vidrio transparente apiladas en fila sobre fondo blanco"
+  },
+  {
+    "file": "services/otros/piezas-vidrio-cortadas.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/abstract-art-decorating-white-wall-13817342/",
+    "author": "Lisett Kruusimäe",
+    "license": "Pexels License",
+    "alt": "Piezas de vidrio cortadas a medida superpuestas sobre una superficie gris clara"
+  },
+  {
+    "file": "services/otros/mesa-comedor-cristal.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/rectangular-white-table-with-chairs-5712155/",
+    "author": "Arina Krasnikova",
+    "license": "Pexels License",
+    "alt": "Mesa de comedor con tablero de cristal y sillas tapizadas junto a un ventanal luminoso"
+  },
+  {
+    "file": "process/01-consulta-muestras-planos.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/people-holding-tile-samples-4977410/",
+    "author": "Kaboompics.com (Karolina Grabowska)",
+    "license": "Pexels License",
+    "alt": "Manos comparando muestras de materiales sobre planos durante una reunión de proyecto"
+  },
+  {
+    "file": "process/02-medicion-ventana.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/crop-worker-measuring-window-frame-with-ruler-5691534/",
+    "author": "Ksenia Chernaya",
+    "license": "Pexels License",
+    "alt": "Operario midiendo el marco de una ventana con una regla metálica y un lápiz"
+  },
+  {
+    "file": "process/03-corte-cristal-taller.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/a-person-holding-a-glass-cutter-7219172/",
+    "author": "cottonbro studio",
+    "license": "Pexels License",
+    "alt": "Primer plano de una mano cortando vidrio con un cortavidrios en el taller"
+  },
+  {
+    "file": "process/04-control-calidad-vidrio.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/industrial-worker-measuring-glass-with-precision-28812390/",
+    "author": "Hanna Alves",
+    "license": "Pexels License",
+    "alt": "Operario con guantes de protección revisando y midiendo una lámina de vidrio en la fábrica"
+  },
+  {
+    "file": "process/05-instalacion-ventana.jpg",
+    "source": "pexels",
+    "pageUrl": "https://www.pexels.com/photo/unrecognizable-workman-installing-window-in-house-during-renovation-process-5691531/",
+    "author": "Ksenia Chernaya",
+    "license": "Pexels License",
+    "alt": "Instalador colocando una hoja de ventana acristalada en una vivienda luminosa"
+  },
+  {
+    "file": "contact/interior-luminoso-cristal.jpg",
+    "source": "unsplash",
+    "pageUrl": "https://unsplash.com/photos/modern-living-room-with-large-windows-overlooking-trees-A9DmoCgM5iw",
+    "author": "Clay Banks",
+    "license": "Unsplash License",
+    "alt": "Salón sereno y luminoso con sofá claro frente a grandes puertas correderas de cristal con vistas al bosque"
+  }
+]
