@@ -14,7 +14,7 @@ export function FaqSection({ items = faqs, title = true }: { items?: Faq[]; titl
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="faq" className="scroll-mt-24 py-16 sm:py-24 lg:py-28">
       <div className="container-site grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
         {title && (
           <div className="lg:sticky lg:top-32 lg:self-start">

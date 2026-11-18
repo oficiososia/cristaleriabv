@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import Image from "next/image";
-import { ArrowUp, Bot, MessageCircle, X } from "lucide-react";
+import { ArrowUp, Bot, X } from "lucide-react";
 import { callFunction, isBackendConfigured } from "@/lib/backend";
 import { localAnswer } from "@/components/chat/local-answer";
 import { whatsappLink } from "@/content/site";
@@ -205,7 +205,7 @@ export function ChatWidget() {
         aria-expanded={open}
         aria-label={open ? "Cerrar asistente virtual" : "Abrir asistente virtual"}
         className={cn(
-          "glass-dark pointer-events-auto flex min-h-14 cursor-pointer items-center gap-3 rounded-full py-2 pl-2 pr-5 text-left text-cream-100 shadow-[0_16px_40px_-16px_rgb(6_26_46/0.7)] transition-opacity",
+          "glass-dark pointer-events-auto flex min-h-14 cursor-pointer items-center gap-3 rounded-full p-2 text-left text-cream-100 shadow-[0_16px_40px_-16px_rgb(6_26_46/0.7)] transition-opacity sm:pr-5",
           open && "pointer-events-none opacity-0",
         )}
         whileHover={{ y: -2 }}
@@ -218,7 +218,6 @@ export function ChatWidget() {
           <span className="block text-sm font-medium leading-tight">Asistente virtual</span>
           <span className="block text-xs text-cream-100/70">¿Dudas sobre cristales?</span>
         </span>
-        <MessageCircle aria-hidden className="size-4 sm:hidden" />
       </motion.button>
     </>
   );

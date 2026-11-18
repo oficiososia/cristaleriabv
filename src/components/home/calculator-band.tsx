@@ -30,7 +30,7 @@ export function CalculatorBand() {
   const total = def.quote({ ...def.defaults, ...ex.values } as never, DEFAULT_PRICING).total;
 
   return (
-    <section className="relative overflow-hidden bg-navy-950 py-20 text-cream-100 sm:py-28">
+    <section className="relative overflow-hidden bg-navy-950 py-16 text-cream-100 sm:py-24 lg:py-28">
       <div aria-hidden className="pointer-events-none absolute -left-40 top-0 size-[40rem] rounded-full bg-navy-700/30 blur-3xl" />
       <div aria-hidden className="pointer-events-none absolute -right-20 bottom-0 size-[28rem] rounded-full bg-gold-400/10 blur-3xl" />
       <div className="container-site relative grid items-center gap-12 lg:grid-cols-2">

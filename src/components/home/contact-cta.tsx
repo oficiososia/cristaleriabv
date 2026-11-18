@@ -5,7 +5,7 @@ import { photos } from "@/content/images";
 
 export function ContactCta() {
   return (
-    <section id="contacto" className="scroll-mt-24 pb-20 sm:pb-28">
+    <section id="contacto" className="scroll-mt-24 pb-16 sm:pb-24 lg:pb-28">
       <div className="container-site">
         <Reveal>
           <div className="grid overflow-hidden rounded-[28px] bg-navy-900 shadow-[0_40px_80px_-40px_rgb(6_26_46/0.7)] lg:grid-cols-[1fr_1.05fr]">

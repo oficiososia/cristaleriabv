@@ -49,7 +49,7 @@ export default function NosotrosPage() {
         crumbs={[{ href: "/nosotros", label: "Nosotros" }]}
       />
 
-      <section className="pb-20 sm:pb-28">
+      <section className="pb-16 sm:pb-24 lg:pb-28">
         <div className="container-site grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <Reveal y={30} className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-[26px] shadow-[0_40px_80px_-40px_rgb(6_26_46/0.55)]">
@@ -115,7 +115,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <section className="py-20 sm:py-28">
+      <section className="py-16 sm:py-24 lg:py-28">
         <div className="container-site">
           <div className="mx-auto max-w-2xl text-center">
             <span className="eyebrow justify-center">Nuestro equipo</span>

@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 /** Tarjetas de servicio con imagen y barra de vidrio esmerilado (como Formis). */
 export function ServicesGrid({ withHeading = true }: { withHeading?: boolean }) {
   return (
-    <section id="servicios" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="servicios" className="scroll-mt-24 py-16 sm:py-24 lg:py-28">
       <div className="container-site">
         {withHeading && (
           <div className="mx-auto max-w-2xl text-center">
@@ -26,18 +26,28 @@ export function ServicesGrid({ withHeading = true }: { withHeading?: boolean }) 
           </div>
         )}
 
-        <RevealGroup className={cn("grid gap-4 sm:grid-cols-2 lg:grid-cols-4", withHeading && "mt-14")} stagger={0.06}>
+        {/* Móvil: carrusel horizontal deslizable. Tablet/escritorio: cuadrícula. */}
+        <p className={cn("flex items-center gap-1.5 text-sm text-ink-soft sm:hidden", withHeading ? "mt-10" : "mt-2")}>
+          Desliza para ver los 8 servicios <ArrowRight aria-hidden className="size-4" />
+        </p>
+        <RevealGroup
+          className={cn(
+            "-mx-4 mt-4 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-4 [scrollbar-width:none] sm:mx-0 sm:grid sm:snap-none sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4 [&::-webkit-scrollbar]:hidden",
+            withHeading && "sm:mt-14",
+          )}
+          stagger={0.06}
+        >
           {services.map((s, i) => {
             const photo = servicePhotos[s.slug].cover;
             // 4 columnas: fila 1 = 2 grandes, fila 2 = 4 pequeñas, fila 3 = 2 grandes.
             const large = i < 2 || i >= 6;
             return (
-              <RevealItem key={s.slug} className={cn(large && "lg:col-span-2")}>
+              <RevealItem key={s.slug} className={cn("w-[82%] shrink-0 snap-start sm:w-auto", large && "lg:col-span-2")}>
                 <Link
                   href={`/servicios/${s.slug}`}
                   className={cn(
                     "group relative block overflow-hidden rounded-[22px] bg-navy-900 shadow-[0_24px_50px_-30px_rgb(6_26_46/0.6)]",
-                    large ? "aspect-[4/3] lg:aspect-[16/10]" : "aspect-[4/3] lg:aspect-[4/5]",
+                    large ? "aspect-[4/5] sm:aspect-[4/3] lg:aspect-[16/10]" : "aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5]",
                   )}
                 >
                   <Image

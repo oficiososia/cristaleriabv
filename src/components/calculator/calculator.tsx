@@ -146,6 +146,7 @@ function CalculatorInner({ initial }: { initial: CategoryId | null }) {
                   aria-current={current ? "step" : undefined}
                   className={cn(
                     "flex min-h-11 items-center gap-2 rounded-full border py-1.5 pl-1.5 pr-4 text-sm transition-colors",
+                    !current && "pr-1.5 sm:pr-4",
                     current && "border-navy-900 bg-navy-900 text-cream-100",
                     done && "cursor-pointer border-navy-900/20 bg-cream-50 text-navy-900 hover:border-navy-900/40",
                     !current && !done && "border-navy-900/10 text-ink-soft",
@@ -159,7 +160,8 @@ function CalculatorInner({ initial }: { initial: CategoryId | null }) {
                   >
                     {done ? <Check aria-hidden className="size-3.5" /> : i + 1}
                   </span>
-                  {label}
+                  {/* En móvil solo se lee el nombre del paso actual */}
+                  <span className={cn(!current && "sr-only sm:not-sr-only")}>{label}</span>
                 </button>
                 {i < STEPS.length - 1 && <span aria-hidden className="h-px w-4 bg-navy-900/15 sm:w-8" />}
               </li>

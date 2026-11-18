@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { ArrowRight, Calculator, Check, Phone } from "lucide-react";
 import { PageHeader } from "@/components/site/page-header";
 import { CtaLink } from "@/components/site/cta";
 import { ServiceIcon } from "@/components/site/service-icon";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
-import { GlassReveal } from "@/components/motion/glass-reveal";
 import { WorksGrid } from "@/components/works/works-grid";
 import { FaqSection } from "@/components/home/faq-section";
 import { servicePhotos } from "@/content/images";
@@ -44,8 +44,34 @@ const faqFor: Record<string, number[]> = {
   otros: [1, 6, 5, 8],
 };
 
-export default async function ServicePage(props: PageProps<"/servicios/[slug]">) {
-  const { slug } = await props.params;
+/**
+ * El contenido depende del slug (dato de URL), así que va dentro de <Suspense>:
+ * la estructura común se prefetchea al instante y cada servicio, que está
+ * prerenderizado con generateStaticParams, entra justo después.
+ */
+export default function ServicePage(props: PageProps<"/servicios/[slug]">) {
+  return (
+    <Suspense fallback={<ServiceSkeleton />}>
+      <ServiceContent params={props.params} />
+    </Suspense>
+  );
+}
+
+function ServiceSkeleton() {
+  return (
+    <div className="container-site animate-pulse pb-24 pt-14" aria-hidden>
+      <div className="h-4 w-40 rounded bg-navy-900/10" />
+      <div className="mt-8 h-4 w-24 rounded bg-gold-400/30" />
+      <div className="mt-5 h-14 max-w-xl rounded-xl bg-navy-900/10" />
+      <div className="mt-4 h-5 max-w-2xl rounded bg-navy-900/5" />
+      <div className="mt-2 h-5 max-w-xl rounded bg-navy-900/5" />
+      <div className="mt-12 aspect-[4/3] max-w-3xl rounded-[26px] bg-navy-900/5" />
+    </div>
+  );
+}
+
+async function ServiceContent({ params }: { params: PageProps<"/servicios/[slug]">["params"] }) {
+  const { slug } = await params;
   const service = serviceBySlug(slug);
   if (!service) notFound();
   const photos = servicePhotos[service.slug];
@@ -75,9 +101,19 @@ export default async function ServicePage(props: PageProps<"/servicios/[slug]">)
       <section className="pb-20 sm:pb-24">
         <div className="container-site grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
           <Reveal y={30}>
-            <GlassReveal className="aspect-[4/3] rounded-[26px] shadow-[0_40px_80px_-40px_rgb(6_26_46/0.55)]" radius={300}>
-              <Image src={photos.cover.src} alt={photos.cover.alt} fill priority sizes="(min-width: 1024px) 680px, 100vw" className="object-cover" />
-            </GlassReveal>
+            <div className="group relative aspect-[4/3] overflow-hidden rounded-[22px] shadow-[0_40px_80px_-40px_rgb(6_26_46/0.55)] sm:rounded-[26px]">
+              <Image
+                src={photos.cover.src}
+                alt={photos.cover.alt}
+                fill
+                priority
+                sizes="(min-width: 1024px) 680px, 100vw"
+                className="object-cover transition-transform duration-[1.4s] ease-glass group-hover:scale-[1.04]"
+              />
+              <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+                <div className="glass-shine animate-shine" />
+              </div>
+            </div>
           </Reveal>
 
           <div>
@@ -127,7 +163,7 @@ export default async function ServicePage(props: PageProps<"/servicios/[slug]">)
 
       <FaqSection items={(faqFor[service.slug] ?? [0, 1, 2, 9]).map((i) => faqs[i])} />
 
-      <section className="pb-20 sm:pb-28">
+      <section className="pb-16 sm:pb-24 lg:pb-28">
         <div className="container-site">
           <h2 className="text-2xl font-medium sm:text-3xl">Otros servicios</h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

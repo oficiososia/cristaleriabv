@@ -39,7 +39,7 @@ Contrastes verificados (WCAG AA): navy-900 sobre fondo 13,4:1 · ink-soft 5,4:1 
 | Titulares palabra a palabra | `text-reveal.tsx` |
 | Contadores animados | `number-ticker.tsx` |
 | Cinta infinita de servicios | `marquee.tsx` |
-| Cristal esmerilado que se aclara bajo el cursor (y solo en móvil) | `glass-reveal.tsx` |
+| Casa que se acristala (hover en escritorio, al aparecer en móvil, interruptor sin cristal / acristalado) | `src/components/home/glazing-house.tsx` |
 
 Duraciones de 0,3 a 0,7 s con la curva `cubic-bezier(0.22, 1, 0.36, 1)`. Todo respeta `prefers-reduced-motion` (`MotionConfig reducedMotion="user"` y reglas CSS).
 

@@ -20,7 +20,7 @@ export default function TrabajosPage() {
         intro="Una selección de proyectos para inspirarte. Filtra por tipo de trabajo y amplía cualquier imagen."
         crumbs={[{ href: "/trabajos", label: "Trabajos" }]}
       />
-      <section className="pb-20 sm:pb-28">
+      <section className="pb-16 sm:pb-24 lg:pb-28">
         <div className="container-site">
           <WorksGrid works={works} />
           <div className="mt-16 flex flex-col items-center gap-4 rounded-[24px] border border-navy-900/10 bg-cream-50 p-8 text-center sm:p-12">

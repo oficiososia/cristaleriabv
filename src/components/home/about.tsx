@@ -9,7 +9,7 @@ import { site } from "@/content/site";
 
 export function About() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-16 sm:py-24 lg:py-28">
       <div className="container-site grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div>
           <Reveal>

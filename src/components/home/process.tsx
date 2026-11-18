@@ -21,7 +21,7 @@ export function Process() {
   const [travelOpen, setTravelOpen] = useState(false);
 
   return (
-    <section id="proceso" className="scroll-mt-24 py-20 sm:py-28">
+    <section id="proceso" className="scroll-mt-24 py-16 sm:py-24 lg:py-28">
       <div className="container-site grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
         <div className="lg:sticky lg:top-32 lg:self-start">
           <Reveal>

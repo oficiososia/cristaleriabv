@@ -7,7 +7,7 @@ import { featuredWorks } from "@/content/works";
 
 export function WorksPreview() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-16 sm:py-24 lg:py-28">
       <div className="container-site">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow justify-center">Trabajos</span>

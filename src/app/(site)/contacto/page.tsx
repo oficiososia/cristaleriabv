@@ -25,29 +25,33 @@ export default function ContactoPage() {
         crumbs={[{ href: "/contacto", label: "Contacto" }]}
       />
 
-      <section className="pb-16">
-        <div className="container-site grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {/* Móvil: teléfonos en dos columnas; WhatsApp y email a todo el ancho. */}
+      <section className="pb-14 sm:pb-16">
+        <div className="container-site grid grid-cols-1 gap-3 min-[380px]:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {site.phones.map((p) => (
-            <a key={p.tel} href={`tel:${p.tel}`} className="group rounded-2xl border border-navy-900/10 bg-cream-50 p-5 transition-colors hover:border-navy-900/30">
+            <a key={p.tel} href={`tel:${p.tel}`} className="group rounded-2xl border border-navy-900/10 bg-cream-50 p-4 transition-colors hover:border-navy-900/30 sm:p-5">
               <Phone aria-hidden className="size-5 text-gold-600" />
               <p className="mt-3 text-sm text-ink-soft">{p.label}</p>
-              <p className="font-heading text-xl font-medium text-navy-900">{p.display}</p>
+              <p className="whitespace-nowrap font-heading text-lg font-medium text-navy-900 sm:text-xl">{p.display}</p>
             </a>
           ))}
-          <a href={`mailto:${site.email}`} className="rounded-2xl border border-navy-900/10 bg-cream-50 p-5 transition-colors hover:border-navy-900/30">
-            <Mail aria-hidden className="size-5 text-gold-600" />
-            <p className="mt-3 text-sm text-ink-soft">Email</p>
-            <p className="break-all font-medium text-navy-900">{site.email}</p>
-          </a>
           <a
             href={whatsappLink("Hola, quería hacer una consulta.")}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-2xl border border-whatsapp/30 bg-whatsapp/5 p-5 transition-colors hover:border-whatsapp/60"
+            className="rounded-2xl border border-whatsapp/30 min-[380px]:col-span-2 lg:col-span-1 bg-whatsapp/5 p-4 transition-colors hover:border-whatsapp/60 sm:p-5"
           >
             <MessageCircle aria-hidden className="size-5 text-whatsapp" />
             <p className="mt-3 text-sm text-ink-soft">WhatsApp</p>
-            <p className="font-heading text-xl font-medium text-navy-900">{site.phones[0].display}</p>
+            <p className="whitespace-nowrap font-heading text-lg font-medium text-navy-900 sm:text-xl">{site.phones[0].display}</p>
+          </a>
+          <a
+            href={`mailto:${site.email}`}
+            className="rounded-2xl border border-navy-900/10 bg-cream-50 p-4 transition-colors hover:border-navy-900/30 min-[380px]:col-span-2 sm:p-5 lg:col-span-1"
+          >
+            <Mail aria-hidden className="size-5 text-gold-600" />
+            <p className="mt-3 text-sm text-ink-soft">Email</p>
+            <p className="break-all font-medium text-navy-900">{site.email}</p>
           </a>
         </div>
       </section>
@@ -104,7 +108,7 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      <section className="pb-20 sm:pb-28">
+      <section className="pb-16 sm:pb-24 lg:pb-28">
         <div className="container-site">
           <div className="grid gap-10 rounded-[28px] bg-navy-900 p-6 sm:p-10 lg:grid-cols-[0.8fr_1.2fr]">
             <div>

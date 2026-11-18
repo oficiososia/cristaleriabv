@@ -1,9 +1,8 @@
-import { Announcement } from "@/components/site/announcement";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { FloatingActions } from "@/components/site/floating-actions";
 
-/** Estructura de la web pública: barra superior, cabecera, contenido, pie y botones flotantes. */
+/** Estructura de la web pública: cabecera, contenido, pie y botones flotantes. */
 export default function SiteLayout({ children }: LayoutProps<"/">) {
   return (
     <>
@@ -13,7 +12,6 @@ export default function SiteLayout({ children }: LayoutProps<"/">) {
       >
         Saltar al contenido
       </a>
-      <Announcement />
       <Header />
       <main id="contenido" className="flex-1">
         {children}
