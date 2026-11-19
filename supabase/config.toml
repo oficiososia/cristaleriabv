@@ -1,0 +1,16 @@
+# Configuración de Supabase CLI para este proyecto.
+# project_id se rellena con `supabase link --project-ref <ref>`.
+project_id = "cristaleriabv"
+
+# Funciones públicas llamadas desde la web con la clave publicable (sb_publishable_…).
+# La comprobación verify_jwt de la plataforma solo entiende las claves antiguas
+# basadas en JWT, así que se desactiva y cada función valida, limita y sanea
+# sus propias entradas.
+[functions.chat]
+verify_jwt = false
+
+[functions.book-appointment]
+verify_jwt = false
+
+[functions.contact]
+verify_jwt = false
